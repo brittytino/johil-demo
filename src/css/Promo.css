@@ -1,0 +1,36 @@
+/* src/styles/Promo.css */
+.promo {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .promo-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .promo-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .promo-item {
+    text-align: center;
+  }
+  
+  .promo-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .promo-item-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .promo-item-text {
+    font-size: 1rem;
+  }

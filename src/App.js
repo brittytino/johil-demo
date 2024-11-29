@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Hero from './components/Hero';
+import Promo from './components/Promo';
+import About from './components/About';
+import FoodMenu from './components/FoodMenu';
+import Footer from './components/Footer';
+import './css/App.css';
+import Navbar from './components/Navbar';
+import heroImg from './images/hero-bg.jpg'; 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={{ backgroundImage: `url(${heroImg})` }}>
+     <Navbar/>
+     
+      <Hero />
+      </div>
+      <Promo />
+      <About />
+      <FoodMenu />
+      <Footer />
+     
     </div>
   );
-}
+};
 
 export default App;

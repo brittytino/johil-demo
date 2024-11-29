@@ -1,0 +1,177 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap');
+
+:root {
+  /* colors */
+  --dark-orange: hsl(28, 100%, 58%);
+  --deep-saffron: hsl(32, 100%, 59%);
+  --desert-sand: hsl(23, 49%, 82%);
+  --champagne-pink: hsl(23, 61%, 86%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /* typography */
+  --ff-shadows-into-light: 'Shadows Into Light', cursive;
+  --ff-rubik: 'Rubik', sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
+}
+
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 145px 0 60px;
+  text-align: center;
+  min-height: 770px;
+  overflow: hidden;
+  top: 60px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/hero-bg-shape.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  color: var(--dark-orange);
+  font-family: var(--ff-shadows-into-light);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hero-title {
+  color: var(--champagne-pink);
+  font-family: var(--ff-rubik);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  max-width: 12ch;
+
+}
+
+.hero-text {
+  color: var(--desert-sand);
+  font-family: var(--ff-roboto);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 44ch;
+}
+
+.btn {
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  font-family: var(--ff-rubik);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 12px 35px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hero-banner {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.hero-img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: auto;
+  transform: scale(1.4) translate(20px, -20px);
+  z-index: 5;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    margin-bottom: 0;
+  }
+
+  .hero-banner {
+    width: 50%;
+  }
+
+  .hero-img-bg {
+    width: 130%;
+  }
+
+  .hero-img {
+    width: 120%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 3.8rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-banner {
+    width: 45%;
+  }
+}
+
+/* Utility Classes */
+.w-100 {
+  width: 100%;
+} 

@@ -1,0 +1,30 @@
+/* src/styles/FoodMenu.css */
+.food-menu {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .food-menu-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .food-menu-item {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .food-menu-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .food-menu-item-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .food-menu-item-text {
+    font-size: 1rem;
+  }
